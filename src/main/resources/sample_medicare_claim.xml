@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicareClaimRequest xmlns="http://medicare.gov/claims/2023">
+    <Header>
+        <TransactionId>TXN-2023-001234</TransactionId>
+        <SubmissionDate>2023-12-01T10:30:00Z</SubmissionDate>
+        <ProviderNPI>1234567890</ProviderNPI>
+        <BatchNumber>BATCH-001</BatchNumber>
+    </Header>
+    
+    <MembershipInfo>
+        <MemberID>MBR123456789</MemberID>
+        <MedicareBeneficiaryId>1AB2CD3EF45</MedicareBeneficiaryId>
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <DateOfBirth>1945-06-15</DateOfBirth>
+        <Gender>M</Gender>
+        <Address>
+            <Street>123 Main Street</Street>
+            <City>Anytown</City>
+            <State>CA</State>
+            <ZipCode>90210</ZipCode>
+        </Address>
+        <EffectiveDate>2023-01-01</EffectiveDate>
+        <PlanType>Medicare Part B</PlanType>
+    </MembershipInfo>
+    
+    <ClaimDetails>
+        <ClaimNumber>CLM-2023-567890</ClaimNumber>
+        <ServiceDate>2023-11-15</ServiceDate>
+        <PlaceOfService>11</PlaceOfService>
+        <TypeOfBill>131</TypeOfBill>
+        
+        <ServiceLines>
+            <ServiceLine>
+                <LineNumber>1</LineNumber>
+                <ProcedureCode>99213</ProcedureCode>
+                <ProcedureDescription>Office Visit - Established Patient</ProcedureDescription>
+                <Quantity>1</Quantity>
+                <ChargedAmount>150.00</ChargedAmount>
+                <DiagnosisCode>Z00.00</DiagnosisCode>
+                <ModifierCode>25</ModifierCode>
+            </ServiceLine>
+            <ServiceLine>
+                <LineNumber>2</LineNumber>
+                <ProcedureCode>93000</ProcedureCode>
+                <ProcedureDescription>Electrocardiogram</ProcedureDescription>
+                <Quantity>1</Quantity>
+                <ChargedAmount>75.00</ChargedAmount>
+                <DiagnosisCode>I25.9</DiagnosisCode>
+            </ServiceLine>
+        </ServiceLines>
+        
+        <TotalChargedAmount>225.00</TotalChargedAmount>
+    </ClaimDetails>
+    
+    <ProviderInfo>
+        <ProviderName>ABC Medical Center</ProviderName>
+        <ProviderNPI>1234567890</ProviderNPI>
+        <TaxId>12-3456789</TaxId>
+        <Address>
+            <Street>456 Healthcare Blvd</Street>
+            <City>Medical City</City>
+            <State>CA</State>
+            <ZipCode>90211</ZipCode>
+        </Address>
+        <PhoneNumber>555-123-4567</PhoneNumber>
+    </ProviderInfo>
+</MedicareClaimRequest>
