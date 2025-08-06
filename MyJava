@@ -1,1 +1,12 @@
+// MyJava - Main application file
+// Note: This file should typically have a .java extension
 
+public class MyJava {
+    public static void main(String[] args) {
+        System.out.println("MyJava application started...");
+        
+        // If you need GenAI XML generation, uncomment the line below:
+        // GenAIXMLgenerator generator = new GenAIXMLgenerator();
+        // generator.generateXML();
+    }
+}
