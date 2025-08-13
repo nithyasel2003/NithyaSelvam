@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicareClaimRequest xmlns="http://medicare.gov/claims/2023">
+    <Header>
+        <TransactionId>TXN-5AC61429</TransactionId>
+        <SubmissionDate>2025-08-05T17:57:49.359467578Z</SubmissionDate>
+        <ProviderNPI>1234567890</ProviderNPI>
+        <BatchNumber>BATCH-262</BatchNumber>
+    </Header>
+    
+    <MembershipInfo>
+        <MemberID>MBR123456789</MemberID>
+        <MedicareBeneficiaryId>1AB2CD3EF45</MedicareBeneficiaryId>
+        <FirstName>John</FirstName>
+        <LastName>Doe</LastName>
+        <DateOfBirth>1945-06-15</DateOfBirth>
+        <Gender>M</Gender>
+        <Address>
+            <Street>123 Main Street</Street>
+            <City>Anytown</City>
+            <State>CA</State>
+            <ZipCode>90210</ZipCode>
+        </Address>
+        <EffectiveDate>2023-01-01</EffectiveDate>
+        <PlanType>Medicare Part B</PlanType>
+    </MembershipInfo>
+    
+    <ClaimDetails>
+        <ClaimNumber>CLM-2025-723416</ClaimNumber>
+        <ServiceDate>2023-11-15</ServiceDate>
+        <PlaceOfService>11</PlaceOfService>
+        <TypeOfBill>131</TypeOfBill>
+        
+        <ServiceLines>
+            <ServiceLine>
+                <LineNumber>1</LineNumber>
+                <ProcedureCode>99213</ProcedureCode>
+                <ProcedureDescription>Office Visit - Established Patient</ProcedureDescription>
+                <Quantity>1</Quantity>
+                <ChargedAmount>150.00</ChargedAmount>
+                <DiagnosisCode>Z00.00</DiagnosisCode>
+                <ModifierCode>25</ModifierCode>
+            </ServiceLine>
+        </ServiceLines>
+        
+        <TotalChargedAmount>150.00</TotalChargedAmount>
+    </ClaimDetails>
+    
+    <ProviderInfo>
+        <ProviderName>ABC Medical Center</ProviderName>
+        <ProviderNPI>1234567890</ProviderNPI>
+        <TaxId>12-3456789</TaxId>
+        <Address>
+            <Street>456 Healthcare Blvd</Street>
+            <City>Medical City</City>
+            <State>CA</State>
+            <ZipCode>90211</ZipCode>
+        </Address>
+        <PhoneNumber>555-123-4567</PhoneNumber>
+    </ProviderInfo>
+</MedicareClaimRequest>
